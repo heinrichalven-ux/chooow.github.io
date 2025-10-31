@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>What Scares You The Most?</title>
+</head>
+<body>
+
+  <h1>WHAT SCARES YOU THE MOST?</h1>
+
+  <div class="container">
+    <img src="picture1.jpg" class="pic" onclick="showVideo()">
+    <img src="picture2.jpg" class="pic" onclick="showVideo()">
+    <img src="picture3.jpg" class="pic" onclick="showVideo()">
+  </div>
+
+  <!-- Video Popup -->
+  <div id="videoPopup" class="popup">
+      <video id="ghostVideo" controls>
+        <source src="ghost.mp4" type="video/mp4">
+      </video>
+      <span class="close" onclick="closeVideo()">✖</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
