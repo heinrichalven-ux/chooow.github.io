@@ -1,10 +1,11 @@
-function showVideo() {
-  document.getElementById("videoPopup").style.display = "flex";
-  document.getElementById("ghostVideo").play();
-}
+function playScare() {
+  // Hide title and pictures
+  document.getElementById("title").style.display = "none";
+  document.getElementById("container").style.display = "none";
 
-function closeVideo() {
-  document.getElementById("videoPopup").style.display = "none";
-  document.getElementById("ghostVideo").pause();
-  document.getElementById("ghostVideo").currentTime = 0;
+  // Show scare screen
+  document.getElementById("scareScreen").style.display = "block";
+
+  // Play video
+  document.getElementById("ghostVideo").play();
 }

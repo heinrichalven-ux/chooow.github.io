@@ -8,22 +8,22 @@
 </head>
 <body>
 
-  <h1>WHAT SCARES YOU THE MOST?</h1>
+  <h1 id="title">WHAT SCARES YOU THE MOST?</h1>
 
-  <div class="container">
-    <img src="picture1.jpg" class="pic" onclick="showVideo()">
-    <img src="picture2.jpg" class="pic" onclick="showVideo()">
-    <img src="picture3.jpg" class="pic" onclick="showVideo()">
+  <div id="container" class="container">
+    <img src="picture1.jpg" class="pic" onclick="playScare()">
+    <img src="picture2.jpg" class="pic" onclick="playScare()">
+    <img src="picture3.jpg" class="pic" onclick="playScare()">
   </div>
 
-  <!-- Video Popup -->
-  <div id="videoPopup" class="popup">
-      <video id="ghostVideo" controls>
-        <source src="ghost.mp4" type="video/mp4">
-      </video>
-      <span class="close" onclick="closeVideo()">✖</span>
+  <!-- Video Screen -->
+  <div id="scareScreen">
+    <h2>ITO TALAGA MAS NAKAKATAKOT</h2>
+    <video id="ghostVideo" controls>
+      <source src="ghost.mp4" type="video/mp4">
+    </video>
   </div>
 
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
